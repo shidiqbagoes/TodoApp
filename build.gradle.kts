@@ -1,5 +1,4 @@
 buildscript {
-
     repositories {
         google()
         jcenter()
@@ -10,6 +9,7 @@ buildscript {
         classpath(Dependencies.ClassPath.kotlinGradle)
         classpath(Dependencies.ClassPath.navArgs)
         classpath(Dependencies.ClassPath.hiltAndroid)
+        classpath(Dependencies.ClassPath.googleGms)
     }
 }
 

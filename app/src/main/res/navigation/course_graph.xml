@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/course_fragment"
+    android:id="@+id/course">
+
+    <fragment
+        android:id="@+id/course_fragment"
+        android:name="android.paninti.todoapp.ui.course.CourseFragment"
+        tools:layout="@layout/fragment_login"/>
+
+</navigation>

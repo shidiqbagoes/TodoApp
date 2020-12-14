@@ -16,9 +16,13 @@ object Version {
         const val navVersion = "2.3.0-alpha06"
         const val hiltVersion = "2.28-alpha"
         const val gradleVersion = "4.1.1"
+        const val gmsVersion = "4.3.4"
     }
 
-    const val kotlinVersion = "1.4.20"
+    const val fragmentVersion = "1.3.0-beta01"
+    const val activityVersion = "1.2.0-beta01"
+
+    const val kotlinVersion = "1.4.21"
     const val coreKtxVersion = "1.3.2"
     const val appCompatVersion = "1.2.0"
     const val materialDesignVersion = "1.2.1"
@@ -35,12 +39,12 @@ object Version {
     const val dataStoreVersion = "1.0.0-alpha02"
 
     const val coroutinesVersion = "1.3.5"
+    const val firebaseVersion = "26.1.0"
 
     const val hiltVersion = "2.28-alpha"
     const val hiltViewModelVersion = "1.0.0-alpha01"
 
     const val glideVersion = "4.11.0"
-
     const val timberVersion = "4.7.1"
 }
 
@@ -52,9 +56,12 @@ object Dependencies {
         const val kotlinGradle = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Version.kotlinVersion}"
         const val navArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${Version.ClassPath.navVersion}"
         const val hiltAndroid = "com.google.dagger:hilt-android-gradle-plugin:${Version.ClassPath.hiltVersion}"
+        const val googleGms = "com.google.gms:google-services:${Version.ClassPath.gmsVersion}"
     }
 
     object UI {
+        const val activityKtx = "androidx.activity:activity-ktx:${Version.activityVersion}"
+        const val fragmentKtx = "androidx.fragment:fragment-ktx:${Version.fragmentVersion}"
         const val appCompat = "androidx.appcompat:appcompat:${Version.appCompatVersion}"
         const val materialDesign = "com.google.android.material:material:${Version.materialDesignVersion}"
         const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Version.constraintVersion}"
@@ -74,6 +81,7 @@ object Dependencies {
         const val roomRuntime = "androidx.room:room-runtime:${Version.roomVersion}"
         const val roomKapt = "androidx.room:room-compiler:${Version.roomVersion}"
         const val navigation = "androidx.navigation:navigation-fragment-ktx:${Version.lifecycleVersion}"
+        const val navigationRuntime = "androidx.navigation:navigation-runtime:${Version.lifecycleVersion}"
         const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Version.lifecycleVersion}"
         const val dataStore = "androidx.datastore:datastore-preferences:${Version.dataStoreVersion}"
     }
@@ -84,6 +92,7 @@ object Dependencies {
         object Coroutines {
             const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Version.coroutinesVersion}"
             const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Version.coroutinesVersion}"
+            const val coroutinesPlayService = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:${Version.coroutinesVersion}"
         }
     }
 
@@ -104,6 +113,13 @@ object Dependencies {
         const val jUnitTest = "androidx.test.ext:junit:${Version.jUnitTestVersion}"
         const val espresso = "androidx.test.espresso:espresso-core:${Version.espressoVersion}"
     }
+
+    object Firebase {
+        const val firebaseBOM = "com.google.firebase:firebase-bom:${Version.firebaseVersion}"
+        const val firebaseAnalyticsKtx = "com.google.firebase:firebase-analytics-ktx"
+        const val firebaseFirestore = "com.google.firebase:firebase-firestore-ktx"
+        const val firebaseAuth = "com.google.firebase:firebase-auth-ktx"
+    }
 }
 
 object Config {
@@ -123,9 +139,11 @@ object ProGuard {
 object Plugin {
     const val application = "com.android.application"
     const val androidKotlin = "kotlin-android"
+    const val kotlinParcelize = "kotlin-parcelize"
     const val kotlinKapt = "kotlin-kapt"
     const val navArgs = "androidx.navigation.safeargs.kotlin"
     const val hilt = "dagger.hilt.android.plugin"
+    const val googleGms = "com.google.gms.google-services"
 }
 
 object Repositories {

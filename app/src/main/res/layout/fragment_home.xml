@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layoutDescription="@xml/motion_scene_collapsing_toolbar"
+    tools:context=".ui.home.HomeFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvCollapse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/what_would_you_like_to_do_now"
+        android:textAppearance="@style/TextAppearance.PoppinsBold" />
+
+
+    <!--<com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/home_search_hint"
+        android:layout_marginTop="@dimen/fragment_vertical_margin"
+        android:layout_marginStart="@dimen/fragment_vertical_margin"
+        android:layout_marginEnd="@dimen/fragment_vertical_margin"
+        app:boxBackgroundMode="outline"
+        app:boxBackgroundColor="@color/blue_grey_800"
+        app:boxStrokeColor="@color/blue_grey_800"
+        app:boxCornerRadiusTopStart="@dimen/medium_size"
+        app:boxCornerRadiusTopEnd="@dimen/medium_size"
+        app:boxCornerRadiusBottomStart="@dimen/medium_size"
+        app:boxCornerRadiusBottomEnd="@dimen/medium_size"
+        app:layout_constraintTop_toBottomOf="@id/tvCollapse">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.PoppinsRegular"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDummyItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>-->
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

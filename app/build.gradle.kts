@@ -1,9 +1,11 @@
 plugins {
     id(Plugin.application)
     id(Plugin.androidKotlin)
+    id(Plugin.kotlinParcelize)
     id(Plugin.kotlinKapt)
     id(Plugin.hilt)
     id(Plugin.navArgs)
+    id(Plugin.googleGms)
 }
 
 android {
@@ -53,16 +55,20 @@ dependencies {
     implementation(Dependencies.Kotlin.kotlin)
     implementation(Dependencies.Kotlin.Coroutines.coroutinesCore)
     implementation(Dependencies.Kotlin.Coroutines.coroutinesAndroid)
+    implementation(Dependencies.Kotlin.Coroutines.coroutinesPlayService)
 
     implementation(Dependencies.UI.appCompat)
     implementation(Dependencies.UI.materialDesign)
     implementation(Dependencies.UI.constraintLayout)
+    implementation(Dependencies.UI.activityKtx)
+    implementation(Dependencies.UI.fragmentKtx)
 
     implementation(Dependencies.Jetpack.lifeCycle)
     implementation(Dependencies.Jetpack.liveDataKtx)
     implementation(Dependencies.Jetpack.viewModelKtx)
     implementation(Dependencies.Jetpack.viewModelRuntime)
     implementation(Dependencies.Jetpack.navigation)
+    implementation(Dependencies.Jetpack.navigationRuntime)
     implementation(Dependencies.Jetpack.navigationUi)
     implementation(Dependencies.Jetpack.roomKtx)
     implementation(Dependencies.Jetpack.roomRuntime)
@@ -73,6 +79,11 @@ dependencies {
 
     implementation(Dependencies.Injection.dagger)
     implementation(Dependencies.Injection.viewModelInject)
+
+    implementation(platform(Dependencies.Firebase.firebaseBOM))
+    implementation(Dependencies.Firebase.firebaseAnalyticsKtx)
+    implementation(Dependencies.Firebase.firebaseFirestore)
+    implementation(Dependencies.Firebase.firebaseAuth)
 
     kapt(Dependencies.Jetpack.roomKapt)
     kapt(Dependencies.Injection.daggerCompiler)

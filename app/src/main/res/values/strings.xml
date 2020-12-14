@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Todo App</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <!--strings related to bottom navigation menu-->
+    <string name="home">Home</string>
+    <string name="course">Course</string>
+    <string name="profile">Profile</string>
+    <string name="cd_home">Home</string>
+    <string name="cd_course">Course</string>
+    <string name="cd_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="what_would_you_like_to_do_now">What would you like to do now</string>
+
+    <string name="home_search_hint">Find for Course, Todo and Task…</string>
+
 </resources>

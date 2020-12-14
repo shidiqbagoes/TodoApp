@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    app:startDestination="@id/login_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="android.paninti.todoapp.ui.login.LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_main_fragment"
+            app:destination="@id/main_fragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/login_fragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="android.paninti.todoapp.ui.main.MainFragment"
+        tools:layout="@layout/fragment_main">
+
+        <argument
+            android:name="isLoggedIn"
+            app:argType="boolean"
+            android:defaultValue="false"/>
+
+    </fragment>
+
+</navigation>
